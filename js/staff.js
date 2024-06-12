@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const roster = [
-        { staff: 'John Toa', dates: ['2024-06-01', '2024-06-03', '2024-06-05'] },
-        { staff: 'Hana Jones', dates: ['2024-06-02', '2024-06-04'] },
-        { staff: 'Anahera Holmes', dates: ['2024-06-05','2024-06-07','2024-06-08']}
+        { staff: 'John Toa', dates: ['2024-06-01', '2024-06-04', '2024-06-05', '2024-06-08', '2024-06-14'] },
+        { staff: 'Hana Jones', dates: ['2024-06-04', '2024-06-05', '2024-06-11', '2024-06-12'] },
+        { staff: 'Anahera Holmes', dates: ['2024-06-05','2024-06-07','2024-06-08', '2024-06-12', '2024-06-14','2024-06-15'] },
         // Add more staff members and their dates as needed
     ];
 
