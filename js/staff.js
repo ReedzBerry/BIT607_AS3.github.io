@@ -18,13 +18,21 @@ document.addEventListener('DOMContentLoaded', function() {
     roster.forEach(staff => {
         const li = document.createElement('li');
         li.textContent = staff.staff;
-        li.addEventListener('click', () => filterRoster(staff));
+        li.addEventListener('click', () => filterRoster(staff, li));
         staffList.appendChild(li);
     });
 
     // Function to filter roster by staff object
-    function filterRoster(staff) {
+    function filterRoster(staff, clickedItem) {
         updateCalendar(staff.dates);
+
+        // Remove 'selected' class from all items
+        document.querySelectorAll('#staffList li').forEach(item => {
+            item.classList.remove('selected');
+        });
+
+        // Add 'selected' class to the clicked item
+        clickedItem.classList.add('selected');
     }
 
     // Function to update Flatpickr calendar

@@ -167,3 +167,26 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* styling for staff page */
+
+/* Hover style for staff list items */
+#staffList li:hover {
+    background-color: #eee; 
+    color: #333; 
+    cursor: pointer; 
+}
+
+/* Active/Focus style for staff list items */
+#staffList li:active,
+#staffList li:focus {
+    background-color: #ccc; 
+    color: #000; 
+}
+
+/* Style for selected staff list item */
+#staffList li.selected {
+    background-color: #bbb; 
+    color: #000; 
+    font-weight: bold; 
+}
